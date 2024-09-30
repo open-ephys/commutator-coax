@@ -112,7 +112,7 @@ device will start in the same state it was last used.
 
 ### Rev C and Before
 
-The controller firmware is located [here](./commutator-controller/teensy-lc). It runs on a
+The controller firmware is located [here](https://github.com/open-ephys/commutator-controller/tree/main/teensy/firmware). It runs on a
 [Teensy lc](https://www.pjrc.com/store/teensylc.html). To compile
 this firmware and program the microcontroller, you need the following
 dependencies:
@@ -132,7 +132,7 @@ ArduinoJSON can be installed through the Arduino IDE's package manager.
 
 ### Rev D and After
 
-The controller firmware is located [here](./commutator-controller/rp2040). It runs on a
+The controller firmware is located [here](https://github.com/open-ephys/commutator-controller/tree/main/rp2040/firmware). It runs on a
 [RP2040](https://www.raspberrypi.com/products/rp2040/). 
 
 ## Construction
@@ -159,7 +159,7 @@ components, including 3D-printed parts, can be found on the BOM.
 
 The board used to control the commutator consists of the following elements:
 
-1. [Teensy LC](https://www.pjrc.com/store/teensylc.html) for receiving
+1. [Teensy LC](https://www.pjrc.com/store/teensylc.html) or [RP2040](https://www.raspberrypi.com/products/rp2040/) for receiving
    commands and controlling all circuit elements.
 1. [TMC2130 stepper driver](https://www.analog.com/media/en/technical-documentation/data-sheets/TMC2130_datasheet_rev1.15.pdf) for driving the
    motor.
@@ -169,7 +169,8 @@ The board used to control the commutator consists of the following elements:
 1. Capacitive touch sensors on the back side of the PCB that serve as buttons
    for manual commutator control
 
-Board designs and manufacturing files are located [here](./commutator-controller/pcb/)). 
+Board designs and manufacturing files are located [here](https://github.com/open-ephys/commutator-controller/tree/main/teensy/pcb) 
+for Rev C and before and [here](https://github.com/open-ephys/commutator-controller/tree/main/rp2040/pcb) for Rev D and after. 
 
 ## Hardware License
 
