@@ -110,9 +110,9 @@ device will start in the same state it was last used.
 
 ## Firmware
 
-### Rev C and Before
+#### Rev C and Before
 
-The controller firmware is located [here](https://github.com/open-ephys/commutator-controller/tree/main/teensy/firmware). It runs on a
+The controller firmware is located [here](https://github.com/open-ephys/commutators/tree/main/firmware). It runs on a
 [Teensy lc](https://www.pjrc.com/store/teensylc.html). To compile
 this firmware and program the microcontroller, you need the following
 dependencies:
@@ -130,9 +130,9 @@ opt to install all of the bundled libraries as well. This takes care of
 installing `AccelStepper` library rather than having to install it manually.
 ArduinoJSON can be installed through the Arduino IDE's package manager.
 
-### Rev D and After
+#### Rev D and After
 
-The controller firmware is located [here](https://github.com/open-ephys/commutator-controller/tree/main/rp2040/firmware). It runs on a
+The controller firmware is located [here](https://github.com/open-ephys/commutator-controller/tree/main/firmware). It runs on a
 [RP2040](https://www.raspberrypi.com/products/rp2040/). 
 
 ## Construction
@@ -157,9 +157,11 @@ components, including 3D-printed parts, can be found on the BOM.
 
 ### Electronics
 
+#### Rev C and Before
+
 The board used to control the commutator consists of the following elements:
 
-1. [Teensy LC](https://www.pjrc.com/store/teensylc.html) or [RP2040](https://www.raspberrypi.com/products/rp2040/) for receiving
+1. [Teensy LC](https://www.pjrc.com/store/teensylc.html) for receiving
    commands and controlling all circuit elements.
 1. [TMC2130 stepper driver](https://www.analog.com/media/en/technical-documentation/data-sheets/TMC2130_datasheet_rev1.15.pdf) for driving the
    motor.
@@ -169,13 +171,27 @@ The board used to control the commutator consists of the following elements:
 1. Capacitive touch sensors on the back side of the PCB that serve as buttons
    for manual commutator control
 
-Board designs and manufacturing files are located [here](https://github.com/open-ephys/commutator-controller/tree/main/teensy/pcb) 
-for Rev C and before and [here](https://github.com/open-ephys/commutator-controller/tree/main/rp2040/pcb) for Rev D and after. 
+Board designs and manufacturing files are located [here](https://github.com/open-ephys/commutators/tree/main/pcb).
+
+#### Rev D and After
+
+The board used to control the commutator consists of the following elements:
+
+1. [RP2040](https://www.raspberrypi.com/products/rp2040/) for receiving
+   commands and controlling all circuit elements.
+1. [TMC2130 stepper driver](https://www.analog.com/media/en/technical-documentation/data-sheets/TMC2130_datasheet_rev1.15.pdf) for driving the
+   motor.
+1. Super-capacitor charge system and step-up regulator for providing
+   high-current capacity drive to the motor driver directly from USB.
+1. RGB indicator LED.
+1. Capacitive touch sensors on the back side of the PCB that serve as buttons
+   for manual commutator control
+
+Board designs and manufacturing files are located [here](https://github.com/open-ephys/commutator-controller/tree/main/pcb).
 
 ## Hardware License
 
-This license pertains to documents in the `control-board`, `mechanical`, and
-`resources` subdirectory.
+This license pertains to documents in the [`commutator-controller/pcb`](https://github.com/open-ephys/commutator-controller) submodule subdirectory and `mechanical` subdirectory.
 
 This work is licensed to Jonathan P. Newman and Jakob Voigts under CC BY-NC-SA
 4.0. To view a copy of this license, visit
@@ -188,8 +204,8 @@ interested in commercially distributing this tool.
 
 ## Software/Firmware License
 
-This license pertains to documents in the source code in the `firmware`
-subdirectory.
+This license pertains to documents in the source code in the [`commutator-controller/firmware`](https://github.com/open-ephys/commutator-controller) 
+submodule subdirectory.
 
 Copyright Jonathan P. Newman
 
