@@ -15,8 +15,7 @@ provide orientation data. It can also be used with a coaxial headstage/miniscope
 e.g. using video-based rotation tracking since its remote control interface is agnostic to how
 rotational measurements are taken. 
 
-For more information on how to use the commutator and the commutator's firmware/PCB designs, visit the
-[commutator controller README](https://github.com/open-ephys/commutator-controller?tab=readme-ov-file#commutator-controller-pcb--firmware).
+For more information, visit the [commutator docs](https://open-ephys.github.io/commutator-docs/).
 
 ## Features
 
@@ -33,23 +32,7 @@ For more information on how to use the commutator and the commutator's firmware/
     - Internal super-capacitor circuitry prevents loading the USB bus during
       motion
 
-### Mechanical
-
-The mechanical component of the commutator are as follows:
-
-1. Rotary Joint
-1. 2x reduction gears (3D-printed)
-1. NEMA-11 Stepper Motor
-1. Housing (3D-printed)
-1. Some fasteners
-
-Mechanical designs are located [here](./mechanical/). STL files for 3D printing
-are located in the `stl` subdirectory. Links to purchase each of these
-components, including 3D-printed parts, can be found on the BOM.
-
 ## Hardware License
-
-This license pertains to documents in the [`commutator-controller/pcb`](https://github.com/open-ephys/commutator-controller) submodule subdirectory and `mechanical` subdirectory.
 
 This work is licensed to Jonathan P. Newman and Jakob Voigts under CC BY-NC-SA
 4.0. To view a copy of this license, visit
@@ -61,9 +44,6 @@ between the Licensor and the Licensee. Please get in touch if you are
 interested in commercially distributing this tool.
 
 ## Software/Firmware License
-
-This license pertains to documents in the source code in the [`commutator-controller/firmware`](https://github.com/open-ephys/commutator-controller) 
-submodule subdirectory.
 
 Copyright Jonathan P. Newman
 
