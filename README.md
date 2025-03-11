@@ -9,10 +9,10 @@ standard active commutator because they are too flexible to translate rotational
 
 ![Zero-torque coaxial commutator.](./resources/demo.gif)
 
-This commutator functions with serialized headstages and miniscopes such as 
-[ONIX headstages](https://open-ephys.github.io/onix-docs/index.html), and UCLA Miniscope 4.0, that
-provide orientation data. It can also be used with a coaxial headstage/miniscope without an IMU,
-e.g. using video-based rotation tracking since its remote control interface is agnostic to how
+This commutator functions with serialized headstages and miniscopes (such as [ONIX
+headstages](https://open-ephys.github.io/onix-docs/index.html) and UCLA Miniscope 4.0) that provide
+orientation data. It can also be used with a coaxial headstage/miniscope without an IMU, using
+video-based rotation tracking since its JSON-based command protocol over serial is agnostic to how
 rotational measurements are taken. 
 
 For more information, visit the [commutator docs](https://open-ephys.github.io/commutator-docs/).
