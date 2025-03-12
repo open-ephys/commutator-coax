@@ -26,6 +26,5 @@ For more information, visit the [commutator docs](https://open-ephys.github.io/c
 | 1 | 3D printed case | Custom part | 3D printed | [link](https://github.com/open-ephys/commutator-coax/tree/main/mechanical/production) |
 | 1 | 3D printed motor gear | Custom part | 3D printed | [link](https://github.com/open-ephys/commutator-coax/tree/main/mechanical/production) | 
 | 1 | 3D printed commutator gear | Custom part | 3D printed | [link](https://github.com/open-ephys/commutator-coax/tree/main/mechanical/production) | 
-| 3 | M2.5 x 10mm socket head cap screws | 91290A103 | for attaching rotary joint to case | [link](https://www.mcmaster.com/91290a103)
-| 4 | M2.5 x 8mm socket head cap screws | 91290A102 | for attaching the motor to the case | [link](https://www.mcmaster.com/91290a102)
-| 4 | M2.5 x 8mm button head screws | 91239A756 | for attaching the PCB to the case | [link](https://www.mcmaster.com/91239A756)
+| 7 | M2.5 x 8mm socket head cap screws | 91290A102 | for attaching rotary joint to case | [link](https://www.mcmaster.com/91290a102) |
+| 4 | M2.5 x 8mm button head screws | 91239A756 | for attaching the PCB to the case | [link](https://www.mcmaster.com/91239A756) |
