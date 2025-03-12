@@ -17,7 +17,9 @@ rotational measurements are taken.
 
 For more information, visit the [commutator docs](https://open-ephys.github.io/commutator-docs/).
 
-## BOM
+## Bill-of-Materials
+
+The following Bill-of-Materials pertains to commutator's mechanical design. You can find the electronics Bill-of-Materials in the [commutator-controller repo](https://github.com/open-ephys/commutator-controller/tree/main/pcb/manufacturing/bom).
 
 | Qty. | Part | Part No. | Description | Link |
 | --- | --- | --- | --- | --- |
