@@ -9,58 +9,26 @@ standard active commutator because they are too flexible to translate rotational
 
 ![Zero-torque coaxial commutator.](./resources/demo.gif)
 
-This commutator functions with serialized headstages and miniscopes such as 
-[ONIX headstages](https://open-ephys.github.io/onix-docs/index.html), and UCLA Miniscope 4.0, that
-provide orientation data. It can also be used with a coaxial headstage/miniscope without an IMU,
-e.g. using video-based rotation tracking since its remote control interface is agnostic to how
+This commutator functions with serialized headstages and miniscopes (such as [ONIX
+headstages](https://open-ephys.github.io/onix-docs/index.html) and UCLA Miniscope 4.0) that provide
+orientation data. It can also be used with a coaxial headstage/miniscope without an IMU, using
+video-based rotation tracking since its JSON-based command protocol over serial is agnostic to how
 rotational measurements are taken. 
 
 For more information, visit the [commutator docs](https://open-ephys.github.io/commutator-docs/).
 
-## Features
+## Bill of Materials (BOM)
 
-- Supports one high bandwidth RF links up to 18 GHz
-- Optical table & 80/20 rail mountable
-- Remote control using JSON-encoded commands
-- Manual control using capacitive sense buttons
-- Indication LED
-    - Can be completely turned off
-- Advanced stepper driver (TMC2130)
-    - Voltage-controlled for silent operation
-    - Precise motion using step interpolation (256 uSteps/step)
-- USB powered and controlled
-    - Internal super-capacitor circuitry prevents loading the USB bus during
-      motion
+The following BOM pertains to the commutator's mechanical design. You can find the electronics BOM in the [commutator-controller repo](https://github.com/open-ephys/commutator-controller/tree/main/pcb/manufacturing/bom).
 
-## Hardware License
-
-This work is licensed to Jonathan P. Newman and Jakob Voigts under CC BY-NC-SA
-4.0. To view a copy of this license, visit
-https://creativecommons.org/licenses/by-nc-sa/4.0
-
-The creation of commercial products using the hardware documentation in this
-repository is not permitted without an explicit, supplementary agreement
-between the Licensor and the Licensee. Please get in touch if you are
-interested in commercially distributing this tool.
-
-## Software/Firmware License
-
-Copyright Jonathan P. Newman
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
-of the Software, and to permit persons to whom the Software is furnished to do
-so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+| Qty. | Part | Part No. | Description | Link |
+| --- | --- | --- | --- | --- |
+| 1	| RF Rotary Joint	|	BN 835047C0010 | SMA-f (50 Ω), DC-18 GHz | [link](https://products.spinner-group.com/1-channel-coaxial-rotary-joint-sma-female-dc-18-ghz-bn835047C0011) |
+| 1 | NEMA 11 motor | 11HS18-0674S | 45mm length, 1.8 deg step angle, ~600mA max | [link](https://www.omc-stepperonline.com/nema-11-bipolar-1-8deg-9-5ncm-13-5oz-in-0-67a-4-6v-28x28x45mm-4-wires-11hs18-0674s) |
+| 1 | 3D printed case | Custom part | 3D printed | [link](https://github.com/open-ephys/commutator-coax/tree/main/mechanical/production) |
+| 1 | 3D printed motor gear | Custom part | 3D printed | [link](https://github.com/open-ephys/commutator-coax/tree/main/mechanical/production) | 
+| 1 | 3D printed commutator gear | Custom part | 3D printed | [link](https://github.com/open-ephys/commutator-coax/tree/main/mechanical/production) | 
+| 7 | M2.5 x 8mm socket head cap screws | 91290A102 | for attaching motor to case | [link](https://www.mcmaster.com/91290A102) |
+| 4 | M2.5 x 8mm button head screws | 91239A756 | for attaching PCB to the case | [link](https://www.mcmaster.com/91239A756) |
+| 1 | Control PCB | - | - | [link](https://github.com/open-ephys/commutators/tree/main/pcb/manufacturing/gerber) |
+| 1 | eBOM | - | electrical components for assembling the PCB | [link](https://github.com/open-ephys/commutators/blob/main/pcb/manufacturing/bom/oe-commutator-controller.html) |
