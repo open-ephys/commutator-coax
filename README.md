@@ -28,5 +28,8 @@ The following BOM pertains to the commutator's mechanical design. You can find t
 | 1 | 3D printed case | Custom part | 3D printed | [link](https://github.com/open-ephys/commutator-coax/tree/main/mechanical/production) |
 | 1 | 3D printed motor gear | Custom part | 3D printed | [link](https://github.com/open-ephys/commutator-coax/tree/main/mechanical/production) | 
 | 1 | 3D printed commutator gear | Custom part | 3D printed | [link](https://github.com/open-ephys/commutator-coax/tree/main/mechanical/production) | 
-| 7 | M2.5 x 8mm socket head cap screws | 91290A102 | for attaching rotary joint to case | [link](https://www.mcmaster.com/91290a102) |
-| 4 | M2.5 x 8mm button head screws | 91239A756 | for attaching the PCB to the case | [link](https://www.mcmaster.com/91239A756) |
+| 3 | M3.5 x 8mm socket head cap screws | 91290A381 | for attaching rotary joint to case | [link](https://www.mcmaster.com/91290A381) |
+| 4 | M2.5 x 6mm socket head cap screws | 91290A101 | for attaching motor to case | [link](https://www.mcmaster.com/91290A101) |
+| 4 | M2.5 x 8mm button head screws | 91239A756 | for attaching PCB to the case | [link](https://www.mcmaster.com/91239A756) |
+| 1 | Control PCB | - | - | [link](https://github.com/open-ephys/commutators/tree/main/pcb/manufacturing/gerber) |
+| 1 | eBOM | - | electrical components for assembling the PCB | [link](https://github.com/open-ephys/commutators/blob/main/pcb/manufacturing/bom/oe-commutator-controller.html) |
