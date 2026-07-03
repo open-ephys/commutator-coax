@@ -1,6 +1,6 @@
 # Torque-free Coax Commutator
 
-The wide-spread availability of 6 degree of freedom pose tracking using internal-measurement units
+The wide-spread availability of 9 degree of freedom pose tracking using internal-measurement units
 (IMUs) allows continuous monitoring of an animal's rotational state in an environment. This obviates
 the need for tether torque measurements to drive an active commutator since the rotational state of
 the animal is known in real-time, and the commutator can simply follow along. This permits the use
@@ -24,12 +24,11 @@ The following BOM pertains to the commutator's mechanical design. You can find t
 | Qty. | Part | Part No. | Description | Link |
 | --- | --- | --- | --- | --- |
 | 1	| RF Rotary Joint	|	BN 835047C0010 | SMA-f (50 Ω), DC-18 GHz | [link](https://products.spinner-group.com/1-channel-coaxial-rotary-joint-sma-female-dc-18-ghz-bn835047C0011) |
-| 1 | NEMA 11 motor | 11HS18-0674S | 45mm length, 1.8 deg step angle, ~600mA max | [link](https://www.omc-stepperonline.com/nema-11-bipolar-1-8deg-9-5ncm-13-5oz-in-0-67a-4-6v-28x28x45mm-4-wires-11hs18-0674s) |
+| 1 | NEMA 11 motor with cable | 11HS18-0674S-C14 | 45mm length, 1.8 deg step angle, ~600mA max, custom cabling | [link](https://www.omc-stepperonline.com/nema-11-bipolar-1-8deg-9-5ncm-13-5oz-in-0-67a-4-6v-28x28x45mm-4-wires-11hs18-0674s) |
 | 1 | 3D printed case | Custom part | 3D printed | [link](https://github.com/open-ephys/commutator-coax/tree/main/mechanical/production) |
 | 1 | 3D printed motor gear | Custom part | 3D printed | [link](https://github.com/open-ephys/commutator-coax/tree/main/mechanical/production) | 
 | 1 | 3D printed commutator gear | Custom part | 3D printed | [link](https://github.com/open-ephys/commutator-coax/tree/main/mechanical/production) | 
-| 3 | M2.5 x 8mm socket head cap screws | 91290A102 | for attaching rotary joint to case | [link](https://www.mcmaster.com/91290A102) |
-| 4 | M2.5 x 6mm socket head cap screws | 91290A101 | for attaching motor to case | [link](https://www.mcmaster.com/91290A101) |
+| 7 | M2.5 x 8mm socket head cap screws | 91290A102 | for attaching motor & rotary joint to case | [link](https://www.mcmaster.com/91290A102) |
 | 4 | M2.5 x 8mm button head screws | 91239A756 | for attaching PCB to the case | [link](https://www.mcmaster.com/91239A756) |
-| 1 | Control PCB | - | - | [link](https://github.com/open-ephys/commutators/tree/main/pcb/manufacturing/gerber) |
-| 1 | eBOM | - | electrical components for assembling the PCB | [link](https://github.com/open-ephys/commutators/blob/main/pcb/manufacturing/bom/oe-commutator-controller.html) |
+| 1 | Control PCB | - | JLCPCB Stackup: JLC04161H-7628 | [link](https://github.com/open-ephys/commutator-controller/tree/main/pcb/manufacturing/gerber) |
+| 1 | eBOM | - | electrical components for assembling the PCB | [link](https://github.com/open-ephys/commutator-controller/tree/main/pcb/manufacturing/bom) |
