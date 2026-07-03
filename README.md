@@ -30,5 +30,5 @@ The following BOM pertains to the commutator's mechanical design. You can find t
 | 1 | 3D printed commutator gear | Custom part | 3D printed | [link](https://github.com/open-ephys/commutator-coax/tree/main/mechanical/production) | 
 | 7 | M2.5 x 8mm socket head cap screws | 91290A102 | for attaching motor & rotary joint to case | [link](https://www.mcmaster.com/91290A102) |
 | 4 | M2.5 x 8mm button head screws | 91239A756 | for attaching PCB to the case | [link](https://www.mcmaster.com/91239A756) |
-| 1 | Control PCB | - | - | [link](https://github.com/open-ephys/commutators/tree/main/pcb/manufacturing/gerber) |
-| 1 | eBOM | - | electrical components for assembling the PCB | [link](https://github.com/open-ephys/commutators/blob/main/pcb/manufacturing/bom/oe-commutator-controller.html) |
+| 1 | Control PCB | - | JLCPCB Stackup: JLC04161H-7628 | [link](https://github.com/open-ephys/commutator-controller/tree/main/pcb/manufacturing/gerber) |
+| 1 | eBOM | - | electrical components for assembling the PCB | [link](https://github.com/open-ephys/commutator-controller/tree/main/pcb/manufacturing/bom) |
